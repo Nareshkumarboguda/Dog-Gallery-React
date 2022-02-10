@@ -1,0 +1,16 @@
+.dogImage{
+    height: 150px;
+    width: 150px;
+}
+li{
+    list-style-type: none;
+}
+.subbreed-popup{
+    display: flex;
+    position: absolute;
+    /* justify-content: center; */
+    align-items: center;
+     width: 500px;
+    
+    background-color: rgba(90, 90, 90, 0.945);
+}

@@ -1,0 +1,57 @@
+.PopUp{
+    display: flex;
+    position:fixed;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(100, 226, 226, 0.486);
+}
+.GetImagesbtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 30px;
+}
+.Popup-container{
+    border: 1px solid rgba(0, 255, 255, 0.705);
+    position:fixed;
+    /* margin-left: 400px; */
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+    max-height: 600px;
+    width:400px;
+    background-color: rgba(245, 245, 245, 0.952);
+}
+.custom-img{
+    height: 100px;
+    width:100px;
+}
+h2{
+    text-align: center;
+    color: rgb(17, 138, 138);
+}
+.Close-btn{
+    position: absolute;
+    margin-top: 0px;
+    right: 0px;
+}
+.Search-header{
+    text-align: center;
+    display:flex; 
+}
+.images-container{
+    display:flex;
+    flex-wrap:wrap;
+    margin-top: 20px;
+    margin-left: 20px;
+    align-items:center;
+    width:100%; 
+    box-sizing: border-box;
+}
+.dog-img{
+    margin: 5px;
+
+}

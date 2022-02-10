@@ -1,0 +1,22 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+.list-Container{
+    display:flex;
+    flex-wrap:wrap;
+    margin-top: 20px;
+    margin-left: 20px;
+    align-items:center;
+    justify-content: center;
+    width:100%; 
+    box-sizing: border-box;
+}
+
+.card-container{
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+}

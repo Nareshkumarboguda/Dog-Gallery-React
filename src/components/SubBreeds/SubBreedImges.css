@@ -1,0 +1,12 @@
+img{
+    
+    align-items: center; 
+    margin: 5px;
+    height :100px;
+    width: 100px;
+   
+}
+.dog-list{
+    display: flex;
+    align-content: center;
+}
