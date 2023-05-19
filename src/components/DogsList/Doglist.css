@@ -2,10 +2,23 @@
     display: flex;
     width:100%;
     align-content: center;
-    
     justify-content: center;
     height: 30px;
 }
 .search-input{
-    width:200px;
+    width:300px;
+    padding-left: 45px;
+    min-height: 40px;
+    background:url("../../../public/search-icon.svg") no-repeat left center;
+    background-position-x: 10px;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+.search-input::placeholder{
+   color: white;
+   font-family: 'Courier New';
+ font-size: 20px;
+}
+.Search-input:focus{
+    border-color:#ffffff ;
 }

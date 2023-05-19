@@ -24,6 +24,7 @@ export default function Dogimage(props) {
       .then(data => setSubBreed(data))
         
     }
+
     
 
     
@@ -31,11 +32,15 @@ export default function Dogimage(props) {
         
       
         <img src={dogName} alt={dogName} className='dogImage' onClick={handleSubBreed}/>
-        <div className='subbreed-popup'>
-        {dogClicked?<SubBreedPopUp className='popup' subBreed={subBreed} handleSubBreed={handleSubBreed} dogClicked ={dogClicked} props={props.props}
+        
+        
+        {dogClicked?<SubBreedPopUp className='images-popup' subBreed={subBreed} handleSubBreed={handleSubBreed} dogClicked ={dogClicked} props={props.props} 
 
          />:null}
         
-        </div>
+       
         </>
 }
+
+
+{/* <div className='subbreed-popup'></div> */}

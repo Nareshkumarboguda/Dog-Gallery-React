@@ -20,6 +20,7 @@ export default function SubBreedImages({names, props}) {
 
  return <div className='dog-list' >
      <img src={images} alt={names} />
+     <p>{names}</p>
     
   </div>;
 }

@@ -42,10 +42,8 @@ useEffect(() => {
   return( 
     <div className='PopUp'>
   <div className='Popup-container'>
-    {/* {console.log(names)} */}
       <div>
       <button className='Close-btn' onClick={HandlePopup}>x</button>
-      
           <h2>Custom Search</h2>
           </div>
       <hr></hr>
@@ -57,9 +55,7 @@ useEffect(() => {
             >{breed}</option>)}
         </select>
         <input type="number" placeholder=" Enter a number"
-        onChange={(event)=>setNumberChange(event.target.value)}
-
-        ></input>
+        onChange={(event)=>setNumberChange(event.target.value)}></input>
         <button className='GetImagesbtn'
          onClick={handleSearch}
          > Get Images</button>

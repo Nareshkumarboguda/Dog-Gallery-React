@@ -39,7 +39,7 @@ import './Doglist.css'
   
     return  <>
               <div className='Search-bar'>
-  <input  type='text' className="search-input" placeholder=" Type Here To Filter By Breed" onChange={(event)=>handleChange(event.target.value)}/>
+  <input  type='text' className="search-input" placeholder="Filter By Breed" onChange={(event)=>handleChange(event.target.value)}/>
   
   </div>
               <DogCard props={filteredName} 

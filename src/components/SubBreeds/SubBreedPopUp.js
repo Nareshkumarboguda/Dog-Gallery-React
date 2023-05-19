@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import MoreImages from './MoreImages';
 import SubBreedImages from './SubBreedImages';
 import './SubBreedPopUp.css';
 // import SubBreedImages from './SubBreedImages'
 
-export default function SubBreedPopUp({handleSubBreed,  props}) {
+export default function SubBreedPopUp({handleSubBreed,  props,  }) {
 const [subBreedData, setSubBreedData] = useState([]);
 // const [noBreeds, setNoBreeds] = useState("")
 
@@ -26,21 +26,23 @@ useEffect(() => {
 // });
 
 
-
   return <div className='subBreed-container'>
-              <button 
+    <div className='popUp-container' >
+             <div className='popUp-Header'>
+            <h2> {props.charAt(0).toUpperCase() + props.slice(1)}</h2> 
+            <button className="close-btn"
               onClick={handleSubBreed}
               >X</button>
-            <h2> {props}</h2> 
+              </div>
             <div >
                     {subBreedData.length} Sub Breed(s)
                     <div className='subBreed-imges'>
-                      <div  > 
+                      
                       {subBreedData ? subBreedData.map((names, i)=><>
                       <SubBreedImages  names={names} props={props} />
-                      <p key={i}>{names}</p>
+                      {/* <p key={i}>{names}</p> */}
                       </>):null}
-                    </div>
+                    
             </div>
           </div>
           <div>
@@ -49,6 +51,6 @@ useEffect(() => {
             </div>
             
             
-            
+            </div>
           </div>;
 }

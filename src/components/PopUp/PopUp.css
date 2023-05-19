@@ -1,11 +1,12 @@
 .PopUp{
+    margin-top: -115px;
     display: flex;
     position:fixed;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 100%;
-    background-color: rgba(100, 226, 226, 0.486);
+    /* background-color: rgba(100, 226, 226, 0.486); */
 }
 .GetImagesbtn{
     display: flex;
@@ -13,9 +14,14 @@
     justify-content: center;
     width: 100px;
     height: 30px;
+    font-size: 16px;
+    color:#5887a3;
+    background-color: white;
+    border:1px solid gray;
 }
 .Popup-container{
-    border: 1px solid rgba(0, 255, 255, 0.705);
+    /* border: 1px solid rgba(0, 255, 255, 0.705); */
+    padding: 0px 15px 15px 15px;
     position:fixed;
     /* margin-left: 400px; */
     align-items: center;
@@ -23,24 +29,35 @@
     min-height: 400px;
     max-height: 600px;
     width:400px;
-    background-color: rgba(245, 245, 245, 0.952);
+    background-color:#f4fbff;
+    border-radius: 10px;
+    box-shadow: 8px 10px 20px 3px #3a3a3a;
 }
 .custom-img{
     height: 100px;
     width:100px;
 }
 h2{
+    font-family: 'Segoe Print';
     text-align: center;
-    color: rgb(17, 138, 138);
+    color: #5887a3;
 }
 .Close-btn{
     position: absolute;
-    margin-top: 0px;
-    right: 0px;
+    margin-top: 8px;
+    right: 12px;
+    width: 20px;
+    border: none;
+    font-size: 20px;
+    background-color: #ffffff00;
 }
 .Search-header{
+    margin-top:10px;
+    display: flex;
+    justify-content: space-between;
     text-align: center;
     display:flex; 
+
 }
 .images-container{
     display:flex;
@@ -53,5 +70,6 @@ h2{
 }
 .dog-img{
     margin: 5px;
+    border-radius: 3px;
 
 }
